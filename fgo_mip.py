@@ -132,13 +132,14 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     def print_quest_details(q):
         print('###', int(X[q].x), f'x {q} ({Quests[q]["location"]})')
         print('**Total bonus:**', TotalQuestBonus[q])
+        print()
         print('|', ' | '.join(Groups), '|')
         print('|', ' | '.join(('---', )*len(Groups)), '|')
         for bonus_row in zip_longest(*OptimalBonus[q].values()):
             print(
                 '|', 
                 ' | '.join(
-                    format_bonus(b, '\n') if b else '' for b in bonus_row),
+                    format_bonus(b) if b else '' for b in bonus_row),
                 '|')
 
 
