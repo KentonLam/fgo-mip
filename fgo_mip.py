@@ -8,12 +8,15 @@ from functools import lru_cache
 
 
 
-def optimise_quests(quests_file, goals, bonuses, all_items=False):
+def optimise_quests(quests_file, goals, bonuses, quest_overrides=None, all_items=False):
+    if quest_overrides is None: quest_overrides = {}
+
     with open(quests_file) as f:
         quest_data = json.load(f)
     
     print('# FGO MIP')
     print('```')
+
 
     AP = {}
     Quests = {}
@@ -67,6 +70,12 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     TotalQuestBonus = {}
     print('Computing optimal bonus configurations...')
     for q in Quests:
+        if q in quest_overrides:
+            OptimalBonus[q] = None 
+            OptimalBonusAmounts[q] = {}
+            TotalQuestBonus[q] = quest_overrides[q]
+            continue
+
         dropped_items = {}
         for item, drops in Drops[q].items():
             if item not in dropped_items:
@@ -101,10 +110,6 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     X = m.addVars(Quests, name='X', obj=AP, vtype=GRB.INTEGER)
     Z = m.addVars(Items, name='Z')
 
-    @lru_cache(None)
-    def quest_bonus(q, i):
-        return sum(OptimalBonusAmounts[q][g].get(i, 0) for g in Groups)
-
     print('Adding model constraints...')
     for i in Items:
         if not (i in goals or all_items): continue
@@ -112,10 +117,9 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         m.addConstr(Z[i] == quicksum( 
             X[q] * sum(
                 d['percent']/100*(
-                    d['num'] + quest_bonus(q, i))
+                    d['num'] + TotalQuestBonus[q].get(i, 0))
                 for d in Drops[q].get(i, ()) )
             for q in X))
-    print(quest_bonus.cache_info())
 
     m.addConstrs(Z[i] >= goals[i] for i in goals)
 
@@ -142,6 +146,9 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         print('###', int(X[q].x), f'x {q} ({Quests[q]["location"]} {AP[q]} AP)')
         print('**Total bonus:**', TotalQuestBonus[q])
         print()
+        if q in quest_overrides:
+            print('Overriding bonuses for', q)
+            return 
         print('', *Groups, '', sep=' | ')
         print('', *('---', )*len(Groups), '', sep=' | ')
         for bonus_row in zip_longest(*OptimalBonus[q].values()):
@@ -156,7 +163,7 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         print()
     print('## Total AP:', '`', m.objVal, '`')
     print('## Total Drops')
-    total_drops = [(Z[i].x, i) for i in Items if Z[i].x]
+    total_drops = [(Z[i].x, i) for i in Items if Z[i].x or i in goals]
     total_drops.sort(reverse=True)
     print(' | Amount | Item |')
     print(' | --- | --- |')
@@ -174,11 +181,11 @@ def main():
     iron = '/item/iron'
     
     GOALS = {
-        iron: 1500-331,
-        stone: 1500-581,
-        food: 2700-1225,
-        water: 2700-1568,
-        wood: 2800-1512,
+        iron: 1500-1500,
+        stone: 1500-1588,
+        food: 2700-2700,
+        water: 2700-2631,
+        wood: 1800-1815,
     }
 
     SHOP_CE = {water: 2, food: 2}
@@ -188,18 +195,21 @@ def main():
 
     SERVANTS = []
     for i in (water, food, wood, stone, iron):
-        SERVANTS.extend(({i:1}, )*5)
+        SERVANTS.extend(({i:1}, )*(5 if i != iron else 4))
     SERVANTS = tuple(SERVANTS)
 
     Bonuses = {
         'servants': (5, SERVANTS),
-        'ces': (5, (SHOP_CE, WOOD_CE, WOOD_CE)),
+        'ces': (5, (SHOP_CE, WOOD_CE, WOOD_CE, {water: 1, food: 1})),
         'sup serv': (1, SERVANTS),
         'sup ce': (1, ({water: 2, food: 2}, {wood: 2}, {stone: 2}, {iron: 2})),
     }
     
     optimise_quests('summer1_quests.json', 
-        GOALS, Bonuses, all_items=True)
+        GOALS, Bonuses, quest_overrides={
+            'view-point-storm': {wood: 4, stone: 5, iron: 1},
+            'romantic-cave-storm': {iron: 7, food: 2, water: 2},
+        }, all_items=True)
 
 if __name__ == "__main__":
     main()
