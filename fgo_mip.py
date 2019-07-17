@@ -157,12 +157,17 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     for _, q in optimal_quests:
         print_quest_details(q)
         print()
-    print('Z')
+    print('## Total AP:', '`', m.objVal, '`')
+    print('## Total Drops')
     total_drops = [(Z[i].x, i) for i in Items if Z[i].x]
     total_drops.sort(reverse=True)
-    pprint(total_drops)
+    print(' | Amount | Item |')
+    print(' | --- | --- |')
+    for amt, item in total_drops:
+        goals_str = f' / {goals[item]}' if item in goals else ''
+        print('', f'{round(amt, 4)}{goals_str}',
+            item, '', sep=' | ')
     print()
-    print('Total AP:', m.objVal)
 
 def main():
     water = '/item/fresh-water'
@@ -189,8 +194,6 @@ def main():
         SERVANTS.extend(({i:1}, )*5)
     SERVANTS = tuple(SERVANTS)
 
-    
-
     Bonuses = {
         'servants': (5, SERVANTS),
         'ces': (5, (SHOP_CE, WOOD_CE, WOOD_CE)),
@@ -199,7 +202,7 @@ def main():
     }
     
     optimise_quests('summer1_quests.json', 
-        GOALS, Bonuses)
+        GOALS, Bonuses, all_items=True)
 
 if __name__ == "__main__":
     main()

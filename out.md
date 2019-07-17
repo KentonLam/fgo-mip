@@ -4,18 +4,19 @@ Initialising quest data...
 Computing optimal bonus configurations...
 Academic license - for non-commercial use only
 Adding model constraints...
-CacheInfo(hits=28, misses=78, maxsize=None, currsize=78)
-Optimize a model with 10 rows, 67 columns and 88 nonzeros
+CacheInfo(hits=28, misses=273, maxsize=None, currsize=273)
+Optimize a model with 36 rows, 67 columns and 309 nonzeros
 Variable types: 31 continuous, 36 integer (0 binary)
 Coefficient statistics:
-  Matrix range     [1e+00, 2e+02]
+  Matrix range     [1e-03, 2e+02]
   Objective range  [1e+01, 4e+01]
   Bounds range     [0e+00, 0e+00]
   RHS range        [9e+02, 1e+03]
-Found heuristic solution: objective 2390.0000000
-Presolve removed 5 rows and 42 columns
+Found heuristic solution: objective 4050.0000000
+Presolve removed 31 rows and 42 columns
 Presolve time: 0.00s
 Presolved: 5 rows, 25 columns, 54 nonzeros
+Found heuristic solution: objective 3780.0000000
 Variable types: 0 continuous, 25 integer (0 binary)
 
 Root relaxation: objective 1.340490e+03, 5 iterations, 0.00 seconds
@@ -23,7 +24,7 @@ Root relaxation: objective 1.340490e+03, 5 iterations, 0.00 seconds
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-     0     0 1340.49042    0    5 2390.00000 1340.49042  43.9%     -    0s
+     0     0 1340.49042    0    5 3780.00000 1340.49042  64.5%     -    0s
 H    0     0                    1380.0000000 1340.49042  2.86%     -    0s
      0     0 1351.18181    0    6 1380.00000 1351.18181  2.09%     -    0s
      0     0 1353.22848    0    7 1380.00000 1353.22848  1.94%     -    0s
@@ -46,7 +47,7 @@ Cutting planes:
 Explored 16 nodes (68 simplex iterations) in 0.02 seconds
 Thread count was 4 (of 4 available processors)
 
-Solution count 2: 1380 2390 
+Solution count 3: 1380 3780 3930 
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.380000000000e+03, best bound 1.380000000000e+03, gap 0.0000%
@@ -118,11 +119,36 @@ Best objective 1.380000000000e+03, best bound 1.380000000000e+03, gap 0.0000%
 | iron+1 |  |  |  |
 | iron+1 |  |  |  |
 
-Z
-[(1482.2000000000003, '/item/food'),
- (1360.8000000000002, '/item/lumber'),
- (1188.0, '/item/iron'),
- (1144.4, '/item/fresh-water'),
- (924.0, '/item/stone')]
+## Total AP: ` 1380.0 `
+## Total Drops
+ | Amount | Item |
+ | --- | --- |
+ | 1482.2 / 1475 | /item/food | 
+ | 1360.8 / 1288 | /item/lumber | 
+ | 1188.0 / 1169 | /item/iron | 
+ | 1144.4 / 1132 | /item/fresh-water | 
+ | 924.0 / 919 | /item/stone | 
+ | 14.0 | /item/magic-gem-berserker | 
+ | 14.0 | /item/gem-berserker | 
+ | 10.839 | /item/shell-reminiscence | 
+ | 9.0 | /item/secret-gem-berserker | 
+ | 9.0 | /item/secret-gem-archer | 
+ | 9.0 | /item/magic-gem-archer | 
+ | 9.0 | /item/gem-archer | 
+ | 7.0 | /item/secret-gem-lancer | 
+ | 7.0 | /item/magic-gem-rider | 
+ | 7.0 | /item/gem-rider | 
+ | 6.0 | /item/magic-gem-saber | 
+ | 6.0 | /item/gem-saber | 
+ | 5.0 | /item/secret-gem-assassin | 
+ | 4.0 | /item/secret-gem-saber | 
+ | 2.376 | /item/serpent-jewel | 
+ | 2.25 | /item/tearstone-blood | 
+ | 2.25 | /item/claw-chaos | 
+ | 2.16 | /item/octuplet-crystals | 
+ | 2.01 | /item/seed-yggdrasil | 
+ | 1.75 | /item/warhorses-young-horn | 
+ | 1.68 | /item/phoenix-feather | 
+ | 1.25 | /item/black-beast-grease | 
+ | 0.546 | /craft-essences/summertime-mistress | 
 
-Total AP: 1380.0
