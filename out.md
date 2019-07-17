@@ -12,11 +12,11 @@ Coefficient statistics:
   Objective range  [1e+01, 4e+01]
   Bounds range     [0e+00, 0e+00]
   RHS range        [9e+02, 1e+03]
-Found heuristic solution: objective 4050.0000000
+Found heuristic solution: objective 3940.0000000
 Presolve removed 31 rows and 42 columns
 Presolve time: 0.00s
 Presolved: 5 rows, 25 columns, 54 nonzeros
-Found heuristic solution: objective 3780.0000000
+Found heuristic solution: objective 3140.0000000
 Variable types: 0 continuous, 25 integer (0 binary)
 
 Root relaxation: objective 1.340490e+03, 5 iterations, 0.00 seconds
@@ -24,7 +24,7 @@ Root relaxation: objective 1.340490e+03, 5 iterations, 0.00 seconds
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
-     0     0 1340.49042    0    5 3780.00000 1340.49042  64.5%     -    0s
+     0     0 1340.49042    0    5 3140.00000 1340.49042  57.3%     -    0s
 H    0     0                    1380.0000000 1340.49042  2.86%     -    0s
      0     0 1351.18181    0    6 1380.00000 1351.18181  2.09%     -    0s
      0     0 1353.22848    0    7 1380.00000 1353.22848  1.94%     -    0s
@@ -44,80 +44,80 @@ Cutting planes:
   Gomory: 1
   MIR: 6
 
-Explored 16 nodes (68 simplex iterations) in 0.02 seconds
+Explored 16 nodes (68 simplex iterations) in 0.05 seconds
 Thread count was 4 (of 4 available processors)
 
-Solution count 3: 1380 3780 3930 
+Solution count 3: 1380 3140 3380 
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.380000000000e+03, best bound 1.380000000000e+03, gap 0.0000%
 ```
 ## Quest Runs
-### 2 x private-beach-novice (Beach)
+### 2 x private-beach-novice (Beach 10 AP)
 **Total bonus:** {'/item/fresh-water': 10, '/item/food': 4}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
 
-### 4 x private-beach-storm (Beach)
+### 4 x private-beach-storm (Beach 40 AP)
 **Total bonus:** {'/item/fresh-water': 10, '/item/food': 4}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
-| fresh-water+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
+ | fresh-water+1 |  |  |  | 
 
-### 5 x mystery-zone-storm (Primeval Forest)
+### 5 x mystery-zone-storm (Primeval Forest 40 AP)
 **Total bonus:** {'/item/food': 10, '/item/fresh-water': 4}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| food+1 | food+2 fresh-water+2 | food+1 | food+2 fresh-water+2 |
-| food+1 |  |  |  |
-| food+1 |  |  |  |
-| food+1 |  |  |  |
-| food+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | food+1 | food+2 fresh-water+2 | food+1 | food+2 fresh-water+2 | 
+ | food+1 |  |  |  | 
+ | food+1 |  |  |  | 
+ | food+1 |  |  |  | 
+ | food+1 |  |  |  | 
 
-### 7 x picnic-field-storm (Grasslands)
+### 7 x picnic-field-storm (Grasslands 40 AP)
 **Total bonus:** {'/item/stone': 8, '/item/food': 2, '/item/fresh-water': 2}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| stone+1 | food+2 fresh-water+2 | stone+1 | stone+2 |
-| stone+1 |  |  |  |
-| stone+1 |  |  |  |
-| stone+1 |  |  |  |
-| stone+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | stone+1 | food+2 fresh-water+2 | stone+1 | stone+2 | 
+ | stone+1 |  |  |  | 
+ | stone+1 |  |  |  | 
+ | stone+1 |  |  |  | 
+ | stone+1 |  |  |  | 
 
-### 9 x jungle-adventure-storm (Jungle)
+### 9 x jungle-adventure-storm (Jungle 40 AP)
 **Total bonus:** {'/item/lumber': 10, '/item/food': 2, '/item/fresh-water': 2}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| lumber+1 | food+2 fresh-water+2 | lumber+1 | lumber+2 |
-| lumber+1 | lumber+1 |  |  |
-| lumber+1 | lumber+1 |  |  |
-| lumber+1 |  |  |  |
-| lumber+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | lumber+1 | food+2 fresh-water+2 | lumber+1 | lumber+2 | 
+ | lumber+1 | lumber+1 |  |  | 
+ | lumber+1 | lumber+1 |  |  | 
+ | lumber+1 |  |  |  | 
+ | lumber+1 |  |  |  | 
 
-### 9 x romantic-cave-storm (Cave)
+### 9 x romantic-cave-storm (Cave 40 AP)
 **Total bonus:** {'/item/iron': 8, '/item/food': 2, '/item/fresh-water': 2}
 
-| servants | ces | sup serv | sup ce |
-| --- | --- | --- | --- |
-| iron+1 | food+2 fresh-water+2 | iron+1 | iron+2 |
-| iron+1 |  |  |  |
-| iron+1 |  |  |  |
-| iron+1 |  |  |  |
-| iron+1 |  |  |  |
+ | servants | ces | sup serv | sup ce | 
+ | --- | --- | --- | --- | 
+ | iron+1 | food+2 fresh-water+2 | iron+1 | iron+2 | 
+ | iron+1 |  |  |  | 
+ | iron+1 |  |  |  | 
+ | iron+1 |  |  |  | 
+ | iron+1 |  |  |  | 
 
 ## Total AP: ` 1380.0 `
 ## Total Drops

@@ -139,7 +139,7 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         return ' | '.join(out)
 
     def print_quest_details(q):
-        print('###', int(X[q].x), f'x {q} ({Quests[q]["location"]})')
+        print('###', int(X[q].x), f'x {q} ({Quests[q]["location"]} {AP[q]} AP)')
         print('**Total bonus:**', TotalQuestBonus[q])
         print()
         print('', *Groups, '', sep=' | ')
