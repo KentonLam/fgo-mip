@@ -1,0 +1,2060 @@
+[
+    {
+        "location": "Beach",
+        "title": "private-beach-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 4,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 120,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 70,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Beach",
+        "title": "private-beach-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 10,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 335,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 60,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 165,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Beach",
+        "title": "private-beach-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 14.95,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 447.5,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 175,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 132.5,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Beach",
+        "title": "private-beach-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 23,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 440,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 4,
+                "percent": 220,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 480,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Beach",
+        "title": "private-beach-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 26.2,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 120,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 360,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 4,
+                "percent": 240,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 220,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 3,
+                "percent": 240,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Beach",
+        "title": "private-beach-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-saber",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 35,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 960,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 4,
+                "percent": 200,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 200,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 3,
+                "percent": 480,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 3,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 1,
+                "percent": 120,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 90,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 16.3,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 6.5,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 2.25,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 1,
+                "percent": 232.5,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 172.5,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 11.1,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 7.5,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 2,
+                "percent": 430,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 307.5,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-lancer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 17.6,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 13.6,
+                "max": null
+            },
+            {
+                "item": "/item/warhorses-young-horn",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 2,
+                "percent": 320,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 4,
+                "percent": 400,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 270,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 240,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 21.8,
+                "max": null
+            },
+            {
+                "item": "/item/warhorses-young-horn",
+                "num": 1,
+                "percent": 20,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 20.4,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 2,
+                "percent": 520,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 4,
+                "percent": 400,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 640,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Grasslands",
+        "title": "picnic-field-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-lancer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/phoenix-feather",
+                "num": 1,
+                "percent": 24,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 37.4,
+                "max": null
+            },
+            {
+                "item": "/item/warhorses-young-horn",
+                "num": 1,
+                "percent": 25,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 4,
+                "percent": 1100,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 805,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 4,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 90,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 1,
+                "percent": 120,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 8.5,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 3,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 200,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 1,
+                "percent": 270,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 7.5,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 307.5,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 2,
+                "percent": 430,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 17.6,
+                "max": null
+            },
+            {
+                "item": "/item/tearstone-blood",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 13.6,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 270,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 240,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 2,
+                "percent": 320,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 400,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 21.8,
+                "max": null
+            },
+            {
+                "item": "/item/tearstone-blood",
+                "num": 1,
+                "percent": 20,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 20.4,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 640,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 2,
+                "percent": 480,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 400,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Cave",
+        "title": "romantic-cave-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/octuplet-crystals",
+                "num": 1,
+                "percent": 24,
+                "max": null
+            },
+            {
+                "item": "/item/tearstone-blood",
+                "num": 1,
+                "percent": 25,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 37.4,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 805,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 1100,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 4,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 90,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 1,
+                "percent": 120,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 8.5,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 3,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 200,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 1,
+                "percent": 270,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 7.5,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 307.5,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 2,
+                "percent": 430,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/claw-chaos",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 21.4,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 13.8,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 355,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 150,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 2,
+                "percent": 420,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 300,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/claw-chaos",
+                "num": 1,
+                "percent": 20,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 25.4,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 20.4,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 630,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 2,
+                "percent": 600,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 300,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Jungle",
+        "title": "jungle-adventure-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-archer",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/claw-chaos",
+                "num": 1,
+                "percent": 25,
+                "max": null
+            },
+            {
+                "item": "/item/serpent-jewel",
+                "num": 1,
+                "percent": 26.4,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 37.5,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 790,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 1080,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 6.5,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 1,
+                "percent": 108,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 1,
+                "percent": 108,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 1,
+                "percent": 108,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 14,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 3,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 1,
+                "percent": 235,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 1,
+                "percent": 235,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 1,
+                "percent": 235,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 22.5,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 7.5,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 2,
+                "percent": 380,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 2,
+                "percent": 380,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 2,
+                "percent": 380,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 34.6,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 13.6,
+                "max": null
+            },
+            {
+                "item": "/item/dragons-reverse-scale",
+                "num": 1,
+                "percent": 10,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 3,
+                "percent": 400,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 133.2,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 3,
+                "percent": 400,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 3,
+                "percent": 133.2,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 3,
+                "percent": 400,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 133.6,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 39,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 20.4,
+                "max": null
+            },
+            {
+                "item": "/item/dragons-reverse-scale",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 3,
+                "percent": 510,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 133.2,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 3,
+                "percent": 510,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 4,
+                "percent": 133.2,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 3,
+                "percent": 510,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 133.6,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Mountain",
+        "title": "view-point-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-rider",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/dragon-fang",
+                "num": 1,
+                "percent": 39.2,
+                "max": null
+            },
+            {
+                "item": "/item/shell-reminiscence",
+                "num": 1,
+                "percent": 37.4,
+                "max": null
+            },
+            {
+                "item": "/item/dragons-reverse-scale",
+                "num": 1,
+                "percent": 20,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 3,
+                "percent": 599.4,
+                "max": null
+            },
+            {
+                "item": "/item/lumber",
+                "num": 4,
+                "percent": 166.5,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 3,
+                "percent": 599.4,
+                "max": null
+            },
+            {
+                "item": "/item/stone",
+                "num": 4,
+                "percent": 166.5,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 3,
+                "percent": 599.4,
+                "max": null
+            },
+            {
+                "item": "/item/iron",
+                "num": 4,
+                "percent": 167,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-novice",
+        "ap": 10,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.1,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 4.8,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 1,
+                "percent": 70,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 1,
+                "percent": 110,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-intermediate",
+        "ap": 20,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 11.9,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 190,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 258,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-advanced",
+        "ap": 30,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.4,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 20.8,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 2,
+                "percent": 320,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 2,
+                "percent": 452,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-expert",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 0.8,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-assassin",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 32.4,
+                "max": null
+            },
+            {
+                "item": "/item/black-beast-grease",
+                "num": 1,
+                "percent": 15,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 520,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 3,
+                "percent": 480,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 4,
+                "percent": 240,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-thunder",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.2,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-assassin",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 36,
+                "max": null
+            },
+            {
+                "item": "/item/black-beast-grease",
+                "num": 1,
+                "percent": 20,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 750,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 4,
+                "percent": 280,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 3,
+                "percent": 810,
+                "max": null
+            }
+        ]
+    },
+    {
+        "location": "Primeval Forest",
+        "title": "mystery-zone-storm",
+        "ap": 40,
+        "drops": [
+            {
+                "item": "/craft-essences/summertime-mistress",
+                "num": 1,
+                "percent": 1.6,
+                "max": null
+            },
+            {
+                "item": "/item/gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/magic-gem-berserker",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/secret-gem-assassin",
+                "num": 1,
+                "percent": 100,
+                "max": null
+            },
+            {
+                "item": "/item/seed-yggdrasil",
+                "num": 1,
+                "percent": 40.2,
+                "max": null
+            },
+            {
+                "item": "/item/black-beast-grease",
+                "num": 1,
+                "percent": 25,
+                "max": null
+            },
+            {
+                "item": "/item/fresh-water",
+                "num": 3,
+                "percent": 620,
+                "max": null
+            },
+            {
+                "item": "/item/food",
+                "num": 4,
+                "percent": 1130,
+                "max": null
+            }
+        ]
+    }
+]

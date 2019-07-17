@@ -1,0 +1,136 @@
+Initialising quest data...
+Enumerating bonus combinations...
+Academic license - for non-commercial use only
+Adding model constraints...
+CacheInfo(hits=254520, misses=12600, maxsize=None, currsize=12600)
+Changed value of parameter MIPGap to 0.009000000000000001
+   Prev: 0.0001  Min: 0.0  Max: 1e+100  Default: 0.0001
+Optimize a model with 10 rows, 90751 columns and 196570 nonzeros
+Variable types: 31 continuous, 90720 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+01, 4e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+03, 2e+03]
+Presolve removed 5 rows and 89603 columns
+Presolve time: 0.14s
+Presolved: 5 rows, 1148 columns, 3286 nonzeros
+Variable types: 0 continuous, 1148 integer (0 binary)
+Found heuristic solution: objective 2880.0000000
+
+Root relaxation: objective 1.910343e+03, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1910.34342    0    5 2880.00000 1910.34342  33.7%     -    0s
+H    0     0                    1980.0000000 1910.34342  3.52%     -    0s
+H    0     0                    1960.0000000 1910.34342  2.53%     -    0s
+     0     0 1916.58776    0    7 1960.00000 1916.58776  2.21%     -    0s
+     0     0 1918.34741    0    8 1960.00000 1918.34741  2.13%     -    0s
+     0     0 1918.68885    0    9 1960.00000 1918.68885  2.11%     -    0s
+     0     0 1918.70372    0    9 1960.00000 1918.70372  2.11%     -    0s
+     0     0 1918.74149    0   10 1960.00000 1918.74149  2.11%     -    0s
+     0     0 1918.75217    0    9 1960.00000 1918.75217  2.10%     -    0s
+     0     0 1918.77690    0   10 1960.00000 1918.77690  2.10%     -    0s
+     0     0 1919.49875    0   11 1960.00000 1919.49875  2.07%     -    0s
+     0     0 1919.66309    0   11 1960.00000 1919.66309  2.06%     -    0s
+     0     0 1919.70555    0   13 1960.00000 1919.70555  2.06%     -    0s
+     0     0 1919.86549    0   13 1960.00000 1919.86549  2.05%     -    0s
+     0     0 1919.87079    0   15 1960.00000 1919.87079  2.05%     -    0s
+     0     0 1919.87079    0   16 1960.00000 1919.87079  2.05%     -    0s
+     0     0 1920.10236    0   14 1960.00000 1920.10236  2.04%     -    0s
+     0     0 1920.43643    0   11 1960.00000 1920.43643  2.02%     -    0s
+     0     0 1920.45076    0   13 1960.00000 1920.45076  2.02%     -    0s
+     0     0 1920.76055    0   11 1960.00000 1920.76055  2.00%     -    0s
+     0     0 1920.76790    0   12 1960.00000 1920.76790  2.00%     -    0s
+     0     0 1920.76790    0   13 1960.00000 1920.76790  2.00%     -    0s
+     0     0 1920.76790    0   12 1960.00000 1920.76790  2.00%     -    0s
+     0     2 1920.76790    0   12 1960.00000 1920.76790  2.00%     -    0s
+H 1030   763                    1950.0000000 1921.96538  1.44%   1.6    1s
+H 1065   746                    1940.0000000 1922.24513  0.92%   1.8    2s
+
+Cutting planes:
+  Gomory: 6
+  MIR: 2
+  StrongCG: 7
+
+Explored 1066 nodes (1943 simplex iterations) in 2.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 1940 1950 1960 ... 2880
+
+Optimal solution found (tolerance 9.00e-03)
+Best objective 1.940000000000e+03, best bound 1.930000000000e+03, gap 0.5155%
+X
+  1 x jungle-adventure-storm (Jungle)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 5, '/item/lumber': 7}
+      servants: food+1 | food+1 | food+1 | lumber+1 | lumber+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: lumber+1
+      sup ce: lumber+2
+
+  1 x private-beach-storm (Beach)
+      total bonus: {'/item/fresh-water': 7, '/item/food': 7, '/item/lumber': 2}
+      servants: food+1 | food+1 | fresh-water+1 | fresh-water+1 | fresh-water+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: food+1
+      sup ce: food+2 fresh-water+2
+
+  1 x view-point-storm (Mountain)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 2, '/item/lumber': 2, '/item/stone': 1, '/item/iron': 7}
+      servants: iron+1 | iron+1 | iron+1 | iron+1 | stone+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: iron+1
+      sup ce: iron+2
+
+  2 x view-point-novice (Mountain)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 2, '/item/lumber': 2, '/item/stone': 4, '/item/iron': 4}
+      servants: iron+1 | stone+1 | stone+1 | stone+1 | stone+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: iron+1
+      sup ce: iron+2
+
+  5 x mystery-zone-storm (Primeval Forest)
+      total bonus: {'/item/fresh-water': 4, '/item/food': 10, '/item/lumber': 2}
+      servants: food+1 | food+1 | food+1 | food+1 | food+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: food+1
+      sup ce: food+2 fresh-water+2
+
+  8 x jungle-adventure-storm (Jungle)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 2, '/item/lumber': 10}
+      servants: lumber+1 | lumber+1 | lumber+1 | lumber+1 | lumber+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: lumber+1
+      sup ce: lumber+2
+
+  9 x romantic-cave-storm (Cave)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 2, '/item/lumber': 2, '/item/iron': 8}
+      servants: iron+1 | iron+1 | iron+1 | iron+1 | iron+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: iron+1
+      sup ce: iron+2
+
+ 11 x picnic-field-storm (Grasslands)
+      total bonus: {'/item/fresh-water': 2, '/item/food': 2, '/item/lumber': 2, '/item/stone': 8}
+      servants: stone+1 | stone+1 | stone+1 | stone+1 | stone+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: stone+1
+      sup ce: stone+2
+
+ 12 x private-beach-storm (Beach)
+      total bonus: {'/item/fresh-water': 10, '/item/food': 4, '/item/lumber': 2}
+      servants: fresh-water+1 | fresh-water+1 | fresh-water+1 | fresh-water+1 | fresh-water+1
+      ces: food+2 fresh-water+2 | lumber+1 | lumber+1
+      sup serv: fresh-water+1
+      sup ce: food+2 fresh-water+2
+
+Z
+[(2458.4000000000005, '/item/fresh-water'),
+ (2040.5000000000002, '/item/food'),
+ (1495.1009999999999, '/item/stone'),
+ (1374.8400000000001, '/item/lumber'),
+ (1277.11, '/item/iron')]
+
+Total AP: 1940.0
