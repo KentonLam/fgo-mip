@@ -36,87 +36,104 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         GroupMax[g] = limit 
         GroupBonuses[g] = tuple(tuple(sorted(b.items())) for b in bonuses)
 
-    BonusCombinations = {}
-    TotalBonus = {}
-    GIDs = []
-    print('Enumerating bonus combinations...')
-    for g in Groups:
-        BonusCombinations[g] = {}
-        TotalBonus[g] = {}
-        r = min(len(GroupBonuses[g]), GroupMax[g])
-        combs = set(tuple(sorted(c)) 
-            for c in combinations(GroupBonuses[g], r))
-        gid = 0
-        for comb in combs:
-            TotalBonus[g][gid] = {}
-            BonusCombinations[g][gid] = comb 
-            for bonus in comb:
-                for item, amount in bonus:
-                    if item not in TotalBonus[g][gid]:
-                        TotalBonus[g][gid][item] = 0
-                    TotalBonus[g][gid][item] += amount
-            gid += 1
-        GIDs.append(list(range(gid)))
+    @lru_cache(None)
+    def compute_group_bonuses(bonus_list):
+        total = {}
+        for bonus in bonus_list:
+            for i, amt in bonus:
+                if i not in total: total[i] = 0 
+                total[i] += amt 
+        return total
+
+    combs_set = lru_cache(None)(lambda g, r: set(tuple(sorted(c)) 
+                for c in combinations(GroupBonuses[g], r)))
+
+    OptimalBonus = {}
+    OptimalBonusAmounts = {}
+    TotalQuestBonus = {}
+    print('Computing optimal bonus configurations...')
+    for q in Quests:
+        dropped_items = {}
+        for item, drops in Drops[q].items():
+            if item not in dropped_items:
+                dropped_items[item] = 0 
+            for d in drops:
+                dropped_items[d['item']] += d['percent']*d['num'] / 100
+        priority = sorted(dropped_items.keys(), key=lambda k: dropped_items[k])
+        priority = list(priority)
+        # pprint(priority)
+
+        OptimalBonus[q] = {}
+        OptimalBonusAmounts[q] = {}
+        for g in Groups:
+            r = min(len(GroupBonuses[g]), GroupMax[g])
+            combs = combs_set(g, r)
+            dropped_set = set(priority)
+            combs = [c for c in combs if set(compute_group_bonuses(c)) ^ (dropped_set)]
+            for item in priority:
+                combs.sort(key=lambda c: compute_group_bonuses(c).get(item, 0))
+            OptimalBonus[q][g] = combs[-1]
+            OptimalBonusAmounts[q][g] = compute_group_bonuses(combs[-1])
+            # pprint(combs[-1])
+        
+        TotalQuestBonus[q] = {}
+        for g, bonus in OptimalBonusAmounts[q].items():
+            for i, amt in bonus.items():
+                if i not in TotalQuestBonus[q]: TotalQuestBonus[q][i] = 0 
+                TotalQuestBonus[q][i] += amt
     # pprint(BonusCombinations)
     # pprint(TotalBonus)
     # pprint(GIDs)
 
-    class APShim(dict):
-        def get(self, x, default=None):
-            return AP[x[0]]
-
     m = Model('FGO')
-    X = m.addVars(Quests, *GIDs, name='X', obj=APShim(), vtype=GRB.INTEGER)
+    X = m.addVars(Quests, name='X', obj=AP, vtype=GRB.INTEGER)
     Z = m.addVars(Items, name='Z')
 
     @lru_cache(None)
-    def gids_bonus(i, gids):
-        return sum(TotalBonus[g][gid].get(i, 0) 
-            for g, gid in zip(Groups, gids))
+    def quest_bonus(q, i):
+        return sum(OptimalBonusAmounts[q][g].get(i, 0) for g in Groups)
 
     print('Adding model constraints...')
     for i in Items:
         if not (i in goals or all_items): continue
         # print(i)
         m.addConstr(Z[i] == quicksum( 
-            X[q_gids] * sum(
+            X[q] * sum(
                 d['percent']/100*(
-                    d['num'] + gids_bonus(i, q_gids[1:]))
-                for d in Drops[q_gids[0]].get(i, ()) )
-            for q_gids in X))
-    print(gids_bonus.cache_info())
+                    d['num'] + quest_bonus(q, i))
+                for d in Drops[q].get(i, ()) )
+            for q in X))
+    print(quest_bonus.cache_info())
 
     m.addConstrs(Z[i] >= goals[i] for i in goals)
 
     m.setAttr(GRB.Attr.ModelSense, GRB.MINIMIZE)
-    m.setParam(GRB.Attr.MIPGap, 0.9/100)
+    # m.setParam(GRB.Attr.MIPGap, 0.9/100)
     # m.write('model.lp')
     m.optimize()
 
-    def format_gids(g, gid):
+    def format_groups(group_bonuses):
         out = []
-        for bonus in BonusCombinations[g][gid]:
+        for bonus in group_bonuses:
             s = []
             for mat, amt in bonus:
                 s.append(mat.replace('/item/', '') + f'+{amt}')
             out.append(' '.join(s))
         return ' | '.join(out)
 
-    def print_q_gids(q_gids):
-        q, *gids = q_gids
-        print(str(int(X[q_gids].x)).rjust(3)+f' x {q} ({Quests[q]["location"]})')
-        print('      total bonus:', 
-            {i: gids_bonus(i, tuple(gids)) for i in Items if gids_bonus(i, tuple(gids))})
-        for g, gid in zip(Groups, gids):
-            print(f'      {g}:', format_gids(g, gid))
+    def print_quest_details(q):
+        print(str(int(X[q].x)).rjust(3)+f' x {q} ({Quests[q]["location"]})')
+        print('      total bonus:', TotalQuestBonus[q])
+        for g in Groups:
+            print(f'      {g}:', format_groups(OptimalBonus[q][g]))
 
 
 
     print('X')
-    optimal_quests = [(X[q_g].x, q_g) for q_g in X if X[q_g].x]
+    optimal_quests = [(X[q].x, q) for q in X if X[q].x]
     optimal_quests.sort()
-    for _, q_g in optimal_quests:
-        print_q_gids(q_g)
+    for _, q in optimal_quests:
+        print_quest_details(q)
         print()
     print('Z')
     total_drops = [(Z[i].x, i) for i in Items if Z[i].x]
@@ -133,10 +150,10 @@ def main():
     iron = '/item/iron'
     
     GOALS = {
-        iron: 1500-223,
-        stone: 1500-5,
-        food: 2700-1117,
-        water: 2700-1536,
+        iron: 1500-331,
+        stone: 1500-581,
+        food: 2700-1225,
+        water: 2700-1568,
         wood: 2800-1512,
     }
 
