@@ -2,7 +2,7 @@ from gurobipy import *
 
 import json 
 from pprint import pprint
-from itertools import combinations
+from itertools import combinations, zip_longest
 from collections import defaultdict
 from functools import lru_cache
 
@@ -12,6 +12,9 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     with open(quests_file) as f:
         quest_data = json.load(f)
     
+    print('# FGO MIP')
+    print('```')
+
     AP = {}
     Quests = {}
     Drops = {}
@@ -111,25 +114,36 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
     # m.setParam(GRB.Attr.MIPGap, 0.9/100)
     # m.write('model.lp')
     m.optimize()
+    print('```')
+
+    def format_bonus(bonus, sep=' '):
+        s = []
+        for mat, amt in bonus:
+            s.append(mat.replace('/item/', '') + f'+{amt}')
+        return sep.join(s)
+
 
     def format_groups(group_bonuses):
         out = []
         for bonus in group_bonuses:
-            s = []
-            for mat, amt in bonus:
-                s.append(mat.replace('/item/', '') + f'+{amt}')
-            out.append(' '.join(s))
+            out.append(format_bonus(bonus))
         return ' | '.join(out)
 
     def print_quest_details(q):
-        print(str(int(X[q].x)).rjust(3)+f' x {q} ({Quests[q]["location"]})')
-        print('      total bonus:', TotalQuestBonus[q])
-        for g in Groups:
-            print(f'      {g}:', format_groups(OptimalBonus[q][g]))
+        print('###', int(X[q].x), f'x {q} ({Quests[q]["location"]})')
+        print('**Total bonus:**', TotalQuestBonus[q])
+        print('|', ' | '.join(Groups), '|')
+        print('|', ' | '.join(('---', )*len(Groups)), '|')
+        for bonus_row in zip_longest(*OptimalBonus[q].values()):
+            print(
+                '|', 
+                ' | '.join(
+                    format_bonus(b, '\n') if b else '' for b in bonus_row),
+                '|')
 
 
 
-    print('X')
+    print('## Quest Runs')
     optimal_quests = [(X[q].x, q) for q in X if X[q].x]
     optimal_quests.sort()
     for _, q in optimal_quests:
