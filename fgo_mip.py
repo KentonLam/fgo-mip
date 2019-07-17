@@ -76,7 +76,7 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
 
     print('Adding model constraints...')
     for i in Items:
-        if i not in goals: continue
+        if not (i in goals or all_items): continue
         # print(i)
         m.addConstr(Z[i] == quicksum( 
             X[q_gids] * sum(
@@ -119,7 +119,7 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         print_q_gids(q_g)
         print()
     print('Z')
-    total_drops = [(Z[i].x, i) for i in Items if all_items or Z[i].x]
+    total_drops = [(Z[i].x, i) for i in Items if Z[i].x]
     total_drops.sort(reverse=True)
     pprint(total_drops)
     print()
