@@ -39,6 +39,13 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
         GroupMax[g] = limit 
         GroupBonuses[g] = tuple(tuple(sorted(b.items())) for b in bonuses)
 
+    def compute_single_bonus(bonus):
+        total = {}
+        for i, amt in bonus:
+            if i not in total: total[i] = 0 
+            total[i] += amt 
+        return total
+
     @lru_cache(None)
     def compute_group_bonuses(bonus_list):
         total = {}
@@ -48,8 +55,12 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
                 total[i] += amt 
         return total
 
-    combs_set = lru_cache(None)(lambda g, r: set(tuple(sorted(c)) 
-                for c in combinations(GroupBonuses[g], r)))
+    def compute_combs_set(g, drops):
+        filtered_bonuses = [b for b in GroupBonuses[g] 
+            if set(compute_single_bonus(b)) & drops]
+        r = min(len(filtered_bonuses), GroupMax[g])
+        return set(tuple(sorted(c))
+                for c in combinations(filtered_bonuses, r))
 
     OptimalBonus = {}
     OptimalBonusAmounts = {}
@@ -68,11 +79,9 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
 
         OptimalBonus[q] = {}
         OptimalBonusAmounts[q] = {}
+        # print(priority)
         for g in Groups:
-            r = min(len(GroupBonuses[g]), GroupMax[g])
-            combs = combs_set(g, r)
-            dropped_set = set(priority)
-            combs = [c for c in combs if set(compute_group_bonuses(c)) ^ (dropped_set)]
+            combs = list(compute_combs_set(g, set(priority)))
             for item in priority:
                 combs.sort(key=lambda c: compute_group_bonuses(c).get(item, 0))
             OptimalBonus[q][g] = combs[-1]
@@ -141,8 +150,6 @@ def optimise_quests(quests_file, goals, bonuses, all_items=False):
                 ' | '.join(
                     format_bonus(b) if b else '' for b in bonus_row),
                 '|')
-
-
 
     print('## Quest Runs')
     optimal_quests = [(X[q].x, q) for q in X if X[q].x]

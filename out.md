@@ -43,7 +43,7 @@ Cutting planes:
   Gomory: 1
   MIR: 6
 
-Explored 16 nodes (68 simplex iterations) in 0.03 seconds
+Explored 16 nodes (68 simplex iterations) in 0.02 seconds
 Thread count was 4 (of 4 available processors)
 
 Solution count 2: 1380 2390 
@@ -53,46 +53,46 @@ Best objective 1.380000000000e+03, best bound 1.380000000000e+03, gap 0.0000%
 ```
 ## Quest Runs
 ### 2 x private-beach-novice (Beach)
-**Total bonus:** {'/item/fresh-water': 10, '/item/food': 4, '/item/lumber': 2}
+**Total bonus:** {'/item/fresh-water': 10, '/item/food': 4}
 
 | servants | ces | sup serv | sup ce |
 | --- | --- | --- | --- |
 | fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 |
-| fresh-water+1 | lumber+1 |  |  |
-| fresh-water+1 | lumber+1 |  |  |
+| fresh-water+1 |  |  |  |
+| fresh-water+1 |  |  |  |
 | fresh-water+1 |  |  |  |
 | fresh-water+1 |  |  |  |
 
 ### 4 x private-beach-storm (Beach)
-**Total bonus:** {'/item/fresh-water': 10, '/item/food': 4, '/item/lumber': 2}
+**Total bonus:** {'/item/fresh-water': 10, '/item/food': 4}
 
 | servants | ces | sup serv | sup ce |
 | --- | --- | --- | --- |
 | fresh-water+1 | food+2 fresh-water+2 | fresh-water+1 | food+2 fresh-water+2 |
-| fresh-water+1 | lumber+1 |  |  |
-| fresh-water+1 | lumber+1 |  |  |
+| fresh-water+1 |  |  |  |
+| fresh-water+1 |  |  |  |
 | fresh-water+1 |  |  |  |
 | fresh-water+1 |  |  |  |
 
 ### 5 x mystery-zone-storm (Primeval Forest)
-**Total bonus:** {'/item/food': 10, '/item/fresh-water': 4, '/item/lumber': 2}
+**Total bonus:** {'/item/food': 10, '/item/fresh-water': 4}
 
 | servants | ces | sup serv | sup ce |
 | --- | --- | --- | --- |
 | food+1 | food+2 fresh-water+2 | food+1 | food+2 fresh-water+2 |
-| food+1 | lumber+1 |  |  |
-| food+1 | lumber+1 |  |  |
+| food+1 |  |  |  |
+| food+1 |  |  |  |
 | food+1 |  |  |  |
 | food+1 |  |  |  |
 
 ### 7 x picnic-field-storm (Grasslands)
-**Total bonus:** {'/item/stone': 8, '/item/food': 2, '/item/fresh-water': 2, '/item/lumber': 2}
+**Total bonus:** {'/item/stone': 8, '/item/food': 2, '/item/fresh-water': 2}
 
 | servants | ces | sup serv | sup ce |
 | --- | --- | --- | --- |
 | stone+1 | food+2 fresh-water+2 | stone+1 | stone+2 |
-| stone+1 | lumber+1 |  |  |
-| stone+1 | lumber+1 |  |  |
+| stone+1 |  |  |  |
+| stone+1 |  |  |  |
 | stone+1 |  |  |  |
 | stone+1 |  |  |  |
 
@@ -108,13 +108,13 @@ Best objective 1.380000000000e+03, best bound 1.380000000000e+03, gap 0.0000%
 | lumber+1 |  |  |  |
 
 ### 9 x romantic-cave-storm (Cave)
-**Total bonus:** {'/item/iron': 8, '/item/food': 2, '/item/fresh-water': 2, '/item/lumber': 2}
+**Total bonus:** {'/item/iron': 8, '/item/food': 2, '/item/fresh-water': 2}
 
 | servants | ces | sup serv | sup ce |
 | --- | --- | --- | --- |
 | iron+1 | food+2 fresh-water+2 | iron+1 | iron+2 |
-| iron+1 | lumber+1 |  |  |
-| iron+1 | lumber+1 |  |  |
+| iron+1 |  |  |  |
+| iron+1 |  |  |  |
 | iron+1 |  |  |  |
 | iron+1 |  |  |  |
 
